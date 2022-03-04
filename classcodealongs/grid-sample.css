@@ -1,0 +1,31 @@
+body {
+    background-color: blueviolet;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+/* Below are the class as specified in the html file */
+.color {
+    background-color: green;
+}
+
+.jumping {
+    background-color: yellow;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/* This .jumping div below tells any divs in the jumping class what to do*/
+.jumping div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.eating {
+    background-color: brown;
+    grid-row: 1;
+    grid-column: 2/4x   ;
+}
