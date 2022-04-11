@@ -25,12 +25,12 @@ body {
     box-shadow: 25px 25px 75px rgba(0,0,0,0.75),
     10px 10px 70px rgb(0,0,0,0.25)
     inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(0,0,0,0.2),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
     inset -5px -5px 15px rgb(0,0,0,0.75);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 
 .clock {
@@ -41,7 +41,7 @@ body {
     border-radius: 50%;
     box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
     inset 5px 5px 10px rgba(0,0,0,0.25),
-    inset 5px 5px rgba(0,0,0,0.5),
+    inset 5px 5px rgba(255,255,255,0.5),
     inset -5px -5px 15px rgb(0,0,0,0.75);
     display: flex;
     justify-content: center;
@@ -128,4 +128,32 @@ circle i {
     background: var(--clr);
     box-shadow: 0 0 20px var(--clr),
     0 0 60px var(--clr);
+}
+
+#time {
+    margin-bottom: 40px;
+    display: flex;
+    padding: 10px 2-px;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.5),
+    INSET 5PX 5PX 20PX RGBA(255,255, 255,0.2),
+    INSET -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+#time div {
+    position: relative;
+    width: 60px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--clr);
+}
+
+
+
+#time div:nth-child(1)::after {
+    content: ':';
+    position: absolute;
+    right: -4px;
 }
